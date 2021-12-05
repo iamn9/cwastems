@@ -76,3 +76,16 @@ $factory->define(App\Models\ClientComplaint::class, static function (Faker\Gener
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\ComplaintStatus::class, static function (Faker\Generator $faker) {
+    return [
+        'complaint_id' => $faker->sentence,
+        'user_id' => $faker->sentence,
+        'status' => $faker->sentence,
+        'remarks' => $faker->text(),
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

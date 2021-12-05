@@ -121,5 +121,24 @@ return [
         ],
     ],
 
+    'complaint-status' => [
+        'title' => 'Complaint Statuses',
+
+        'actions' => [
+            'index' => 'Complaint Statuses',
+            'create' => 'New Complaint Status',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'complaint_id' => 'Complaint',
+            'user_id' => 'User',
+            'status' => 'Status',
+            'remarks' => 'Remarks',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];

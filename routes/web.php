@@ -118,3 +118,18 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
         });
     });
 });
+
+/* Auto-generated admin routes */
+Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
+    Route::prefix('admin')->namespace('App\Http\Controllers\Admin')->name('admin/')->group(static function() {
+        Route::prefix('complaint-statuses')->name('complaint-statuses/')->group(static function() {
+            Route::get('/',                                             'ComplaintStatusesController@index')->name('index');
+            Route::get('/create',                                       'ComplaintStatusesController@create')->name('create');
+            Route::post('/',                                            'ComplaintStatusesController@store')->name('store');
+            Route::get('/{complaintStatus}/edit',                       'ComplaintStatusesController@edit')->name('edit');
+            Route::post('/bulk-destroy',                                'ComplaintStatusesController@bulkDestroy')->name('bulk-destroy');
+            Route::post('/{complaintStatus}',                           'ComplaintStatusesController@update')->name('update');
+            Route::delete('/{complaintStatus}',                         'ComplaintStatusesController@destroy')->name('destroy');
+        });
+    });
+});
