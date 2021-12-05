@@ -1,0 +1,26 @@
+{
+    "name": "Cleaned - Waste Management System",
+    "description": "A basic waste MS tool",
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "USE_NPM_INSTALL": {
+            "description": "A configuration var to create build environment.",
+            "value": "true"
+        }
+    },
+    "addons": [
+        "papertrail",
+        "librato",
+        "heroku-postgresql"
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku/php"
+        }
+    ]
+}
