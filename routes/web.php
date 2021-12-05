@@ -88,3 +88,18 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
         });
     });
 });
+
+/* Auto-generated admin routes */
+Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
+    Route::prefix('admin')->namespace('App\Http\Controllers\Admin')->name('admin/')->group(static function() {
+        Route::prefix('bin-statuses')->name('bin-statuses/')->group(static function() {
+            Route::get('/',                                             'BinStatusesController@index')->name('index');
+            Route::get('/create',                                       'BinStatusesController@create')->name('create');
+            Route::post('/',                                            'BinStatusesController@store')->name('store');
+            Route::get('/{binStatus}/edit',                             'BinStatusesController@edit')->name('edit');
+            Route::post('/bulk-destroy',                                'BinStatusesController@bulkDestroy')->name('bulk-destroy');
+            Route::post('/{binStatus}',                                 'BinStatusesController@update')->name('update');
+            Route::delete('/{binStatus}',                               'BinStatusesController@destroy')->name('destroy');
+        });
+    });
+});

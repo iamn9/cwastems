@@ -4,3 +4,4 @@ import './profile-edit-password';
 import './role';
 import './bin';
 import './bin-relationship';
+import './bin-status';

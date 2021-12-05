@@ -82,5 +82,23 @@ return [
         ],
     ],
 
+    'bin-status' => [
+        'title' => 'Bin Statuses',
+
+        'actions' => [
+            'index' => 'Bin Statuses',
+            'create' => 'New Bin Status',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'bin_id' => 'Bin',
+            'status' => 'Status',
+            'remarks' => 'Remarks',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];

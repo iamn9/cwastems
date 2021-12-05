@@ -49,3 +49,15 @@ $factory->define(App\Models\BinRelationship::class, static function (Faker\Gener
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\BinStatus::class, static function (Faker\Generator $faker) {
+    return [
+        'bin_id' => $faker->sentence,
+        'status' => $faker->sentence,
+        'remarks' => $faker->text(),
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});
