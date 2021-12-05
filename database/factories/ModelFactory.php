@@ -28,3 +28,17 @@ $factory->define(App\Models\Role::class, static function (Faker\Generator $faker
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\Bin::class, static function (Faker\Generator $faker) {
+    return [
+        'address_1' => $faker->sentence,
+        'address_2' => $faker->sentence,
+        'landmark' => $faker->sentence,
+        'load_type' => $faker->sentence,
+        'collection_frequency' => $faker->sentence,
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

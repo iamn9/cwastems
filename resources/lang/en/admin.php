@@ -47,5 +47,25 @@ return [
         ],
     ],
 
+    'bin' => [
+        'title' => 'Bins',
+
+        'actions' => [
+            'index' => 'Bins',
+            'create' => 'New Bin',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'address_1' => 'Address 1',
+            'address_2' => 'Address 2',
+            'landmark' => 'Landmark',
+            'load_type' => 'Load type',
+            'collection_frequency' => 'Collection frequency',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];
