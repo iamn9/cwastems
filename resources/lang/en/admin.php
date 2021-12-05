@@ -67,5 +67,20 @@ return [
         ],
     ],
 
+    'bin-relationship' => [
+        'title' => 'Bin Relationships',
+
+        'actions' => [
+            'index' => 'Bin Relationships',
+            'create' => 'New Bin Relationship',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];

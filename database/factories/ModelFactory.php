@@ -42,3 +42,10 @@ $factory->define(App\Models\Bin::class, static function (Faker\Generator $faker)
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\BinRelationship::class, static function (Faker\Generator $faker) {
+    return [
+        
+        
+    ];
+});

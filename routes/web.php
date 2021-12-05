@@ -73,3 +73,18 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
         });
     });
 });
+
+/* Auto-generated admin routes */
+Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
+    Route::prefix('admin')->namespace('App\Http\Controllers\Admin')->name('admin/')->group(static function() {
+        Route::prefix('bin-relationships')->name('bin-relationships/')->group(static function() {
+            Route::get('/',                                             'BinRelationshipsController@index')->name('index');
+            Route::get('/create',                                       'BinRelationshipsController@create')->name('create');
+            Route::post('/',                                            'BinRelationshipsController@store')->name('store');
+            Route::get('/{binRelationship}/edit',                       'BinRelationshipsController@edit')->name('edit');
+            Route::post('/bulk-destroy',                                'BinRelationshipsController@bulkDestroy')->name('bulk-destroy');
+            Route::post('/{binRelationship}',                           'BinRelationshipsController@update')->name('update');
+            Route::delete('/{binRelationship}',                         'BinRelationshipsController@destroy')->name('destroy');
+        });
+    });
+});

@@ -3,3 +3,4 @@ import './profile-edit-profile';
 import './profile-edit-password';
 import './role';
 import './bin';
+import './bin-relationship';
