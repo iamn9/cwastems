@@ -5,3 +5,4 @@ import './role';
 import './bin';
 import './bin-relationship';
 import './bin-status';
+import './client-complaint';

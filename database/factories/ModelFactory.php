@@ -61,3 +61,18 @@ $factory->define(App\Models\BinStatus::class, static function (Faker\Generator $
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\ClientComplaint::class, static function (Faker\Generator $faker) {
+    return [
+        'user_id' => $faker->sentence,
+        'bin_id' => $faker->sentence,
+        'title' => $faker->sentence,
+        'description' => $faker->text(),
+        'address_1' => $faker->text(),
+        'address_2' => $faker->text(),
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

@@ -100,5 +100,26 @@ return [
         ],
     ],
 
+    'client-complaint' => [
+        'title' => 'Client Complaints',
+
+        'actions' => [
+            'index' => 'Client Complaints',
+            'create' => 'New Client Complaint',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'user_id' => 'User',
+            'bin_id' => 'Bin',
+            'title' => 'Title',
+            'description' => 'Description',
+            'address_1' => 'Address 1',
+            'address_2' => 'Address 2',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];
